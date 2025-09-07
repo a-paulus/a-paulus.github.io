@@ -64,7 +64,7 @@ A few major themes of my research involve:
 <table class="table table-hover">
 <tr>
   <td style='padding-right:0;'>
-<span class='cvdate'>Aug 2023&nbsp;-&nbsp;Feb 2024</span>
+<span class='cvdate'>2023&nbsp;-&nbsp;2024</span>
 <p markdown="1" style='margin: 0'><strong>Research Scientist Intern</strong>, <em>Meta, Fundamental AI Research (FAIR)</em>, New York City
 <span markdown="1" style="color:grey;font-size:1.3rem;margin: 0">
 (with <a href="https://bamos.github.io" target="_blank">Brandon Amos</a> on amortized optimization for LLM safety)

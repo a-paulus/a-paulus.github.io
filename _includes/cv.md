@@ -187,19 +187,19 @@ Embedding discrete solvers as differentiable layers has given modern deep learni
 <h2>2021</h2>
 <table class="table table-hover">
 
-<tr id="tr-paulus2024comboptnet" >
+<tr id="tr-paulus2021comboptnet" >
 <td align='right' style='padding-left:0;padding-right:0;'>
 5.
 </td>
 <td>
-<a href='https://arxiv.org/pdf/2105.02343' target='_blank'><img src="images/publications/paulus2024comboptnet.png" onerror="this.style.display='none'" class="publicationImg" /></a> 
+<a href='https://arxiv.org/pdf/2105.02343' target='_blank'><img src="images/publications/paulus2021comboptnet.png" onerror="this.style.display='none'" class="publicationImg" /></a> 
 <em><a href='https://arxiv.org/pdf/2105.02343' target='_blank'>CombOptNet: Fit the Right NP-Hard Problem by Learning Integer Programming Constraints</a> </em> 
 [<a href='javascript:;'
-    onclick='$("#abs_paulus2024comboptnet").toggle()'>abs</a>] [<a href='https://github.com/martius-lab/CombOptNet' target='_blank'>code</a>] <br>
+    onclick='$("#abs_paulus2021comboptnet").toggle()'>abs</a>] [<a href='https://github.com/martius-lab/CombOptNet' target='_blank'>code</a>] <br>
 <strong>Anselm&nbsp;Paulus</strong>, <a href='https://mrolinek.github.io/' target='_blank'>Michal&nbsp;Rolínek</a>, <a href='https://scholar.google.com/citations?user=hA1rlU4AAAAJ' target='_blank'>Vít&nbsp;Musil</a>, <a href='https://bamos.github.io/' target='_blank'>Brandon&nbsp;Amos</a>, and <a href='https://scholar.google.com/citations?user=b-JF-UIAAAAJ' target='_blank'>Georg&nbsp;Martius</a><br>
 ICML 2021 (Spotlight, Oral at LMCA NeurIPS 2020 workshop) <br>
 
-<div id="abs_paulus2024comboptnet" style="text-align: justify; display: none" markdown="1">
+<div id="abs_paulus2021comboptnet" style="text-align: justify; display: none" markdown="1">
 Bridging logical and algorithmic reasoning with modern machine learning techniques is a fundamental challenge with potentially transformative impact. On the algorithmic side, many NP-hard problems can be expressed as integer programs, in which the constraints play the role of their "combinatorial specification." In this work, we aim to integrate integer programming solvers into neural network architectures as layers capable of learning both the cost terms and the constraints. The resulting end-to-end trainable architectures jointly extract features from raw data and solve a suitable (learned) combinatorial problem with state-of-the-art integer programming solvers. We demonstrate the potential of such layers with an extensive performance analysis on synthetic data and with a demonstration on a competitive computer vision keypoint matching benchmark.
 </div>
 

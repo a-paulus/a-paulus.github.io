@@ -1,5 +1,5 @@
 <p>
-I am a PhD student with the IMPRS-IS program at the University of Tuebingen and the Max-Planck-Institute for Intelligent Systems, supervised by Prof. Georg Martius.
+I am a PhD student with the IMPRS-IS program at the University of Tuebingen and the Max-Planck-Institute for Intelligent Systems, supervised by <a href="https://uni-tuebingen.de/en/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/distributed-intelligence/team/prof-dr-georg-martius/">Prof. Georg Martius</a>.
 I am interested in <b>differentiable and amortized optimization, LLM safety and reasoning</b>.
 Currently I am interning in the
 <b>Fundamental AI Research (FAIR)</b>

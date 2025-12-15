@@ -280,6 +280,17 @@ Building on recent progress at the intersection of combinatorial optimization an
   <td align='right' style='padding-right:0;padding-left:0;'>1.</td>
   <td>
     <span class='cvdate'>2025</span>
+    <a href="https://github.com/a-paulus/softjax">a-paulus/softjax</a>
+    <span style="white-space: nowrap">
+    | <i class="fa fas fa-star"></i>&nbsp;0 |
+    </span>
+    <em>Softjax (library for differentiable operations in JAX)</em>
+  </td>
+</tr>
+<tr>
+  <td align='right' style='padding-right:0;padding-left:0;'>2.</td>
+  <td>
+    <span class='cvdate'>2025</span>
     <a href="https://github.com/facebookresearch/advprompter">facebookresearch/advprompter</a>
     <span style="white-space: nowrap">
     | <i class="fa fas fa-star"></i>&nbsp;162 |
@@ -288,7 +299,7 @@ Building on recent progress at the intersection of combinatorial optimization an
   </td>
 </tr>
 <tr>
-  <td align='right' style='padding-right:0;padding-left:0;'>2.</td>
+  <td align='right' style='padding-right:0;padding-left:0;'>3.</td>
   <td>
     <span class='cvdate'>2024</span>
     <a href="https://github.com/martius-lab/diffcp-lpgd">martius-lab/diffcp-lpgd</a>
@@ -299,7 +310,7 @@ Building on recent progress at the intersection of combinatorial optimization an
   </td>
 </tr>
 <tr>
-  <td align='right' style='padding-right:0;padding-left:0;'>3.</td>
+  <td align='right' style='padding-right:0;padding-left:0;'>4.</td>
   <td>
     <span class='cvdate'>2023</span>
     <a href="https://github.com/martius-lab/solver-differentiation-identity">martius-lab/solver-differentiation-identity</a>
@@ -310,7 +321,7 @@ Building on recent progress at the intersection of combinatorial optimization an
   </td>
 </tr>
 <tr>
-  <td align='right' style='padding-right:0;padding-left:0;'>4.</td>
+  <td align='right' style='padding-right:0;padding-left:0;'>5.</td>
   <td>
     <span class='cvdate'>2021</span>
     <a href="https://github.com/martius-lab/CombOptNet">martius-lab/CombOptNet</a>
@@ -321,7 +332,7 @@ Building on recent progress at the intersection of combinatorial optimization an
   </td>
 </tr>
 <tr>
-  <td align='right' style='padding-right:0;padding-left:0;'>5.</td>
+  <td align='right' style='padding-right:0;padding-left:0;'>6.</td>
   <td>
     <span class='cvdate'>2020</span>
     <a href="https://github.com/martius-lab/blackbox-deep-graph-matching">martius-lab/blackbox-deep-graph-matching</a>
@@ -332,7 +343,7 @@ Building on recent progress at the intersection of combinatorial optimization an
   </td>
 </tr>
 <tr>
-  <td align='right' style='padding-right:0;padding-left:0;'>6.</td>
+  <td align='right' style='padding-right:0;padding-left:0;'>7.</td>
   <td>
     <span class='cvdate'>2020</span>
     <a href="https://github.com/martius-lab/blackbox-backprop">martius-lab/blackbox-backprop</a>

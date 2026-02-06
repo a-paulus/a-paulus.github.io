@@ -101,12 +101,29 @@ A few major themes of my research involve:
 [<a href="https://scholar.google.com/citations?user=njZL5CQAAAAJ">Google Scholar</a>: 0.9k+ citations] <br>
 Selected publications I am a primary author on are <span style='background-color: #ffffd0'>highlighted.</span>
 
+<h2>2026</h2>
+<table class="table table-hover">
+
+<tr id="tr-paulus2026advgame" style="background-color: #ffffd0">
+<td align='right' style='padding-left:0;padding-right:0;'>
+1.
+</td>
+<td>
+<a href='https://arxiv.org/abs/2512.20806' target='_blank'><img src="images/publications/paulus2026advgame.png" onerror="this.style.display='none'" class="publicationImg" /></a> 
+<em><a href='https://arxiv.org/abs/2512.20806' target='_blank'>Safety Alignment of LMs via Non-cooperative Games</a> </em> <br>
+<strong>Anselm&nbsp;Paulus</strong>, <a href='https://scholar.google.com/citations?user=fN7fYXIAAAAJ' target='_blank'>Ilia&nbsp;Kulikov</a>, <a href='https://bamos.github.io/' target='_blank'>Brandon&nbsp;Amos</a>, <a href='https://chercheurs.lille.inria.fr/munos/' target='_blank'>Rémi&nbsp;Munos</a>, <a href='https://ivanevtimov.eu' target='_blank'>Ivan&nbsp;Evtimov</a>, <a href='https://scholar.google.com/citations?user=X8H76XIAAAAJ' target='_blank'>Kamalika&nbsp;Chaudhuri</a>, and <a href='https://arman-z.github.io/' target='_blank'>Arman&nbsp;Zharmagambetov</a><br>
+Under submission 2026  <br>
+
+</td>
+</tr>
+
+</table>
 <h2>2025</h2>
 <table class="table table-hover">
 
 <tr id="tr-paulus2025advprompter" style="background-color: #ffffd0">
 <td align='right' style='padding-left:0;padding-right:0;'>
-1.
+2.
 </td>
 <td>
 <a href='https://arxiv.org/abs/2404.16873' target='_blank'><img src="images/publications/paulus2025advprompter.png" onerror="this.style.display='none'" class="publicationImg" /></a> 
@@ -126,7 +143,7 @@ Large Language Models (LLMs) are vulnerable to jailbreaking attacks that lead to
 
 <tr id="tr-paulus2025hard" >
 <td align='right' style='padding-left:0;padding-right:0;'>
-2.
+3.
 </td>
 <td>
 <a href='https://arxiv.org/abs/2506.14186' target='_blank'><img src="images/publications/paulus2025hard.png" onerror="this.style.display='none'" class="publicationImg" /></a> 
@@ -139,20 +156,6 @@ ICLR 2025  <br>
 <div id="abs_paulus2025hard" style="text-align: justify; display: none" markdown="1">
 Contact forces pose a major challenge for gradient-based optimization of robot dynamics as they introduce jumps in the system's velocities. Penalty-based simulators, such as MuJoCo, simplify gradient computation by softening the contact forces. However, realistically simulating hard contacts requires very stiff contact settings, which leads to incorrect gradients when using automatic differentiation. On the other hand, using non-stiff settings strongly increases the sim-to-real gap. We analyze the contact computation of penalty-based simulators to identify the causes of gradient errors. Then, we propose DiffMJX, which combines adaptive integration with MuJoCo XLA, to notably improve gradient quality in the presence of hard contacts. Finally, we address a key limitation of contact gradients: they vanish when objects do not touch. To overcome this, we introduce Contacts From Distance (CFD), a mechanism that enables the simulator to generate informative contact gradients even before objects are in contact. To preserve physical realism, we apply CFD only in the backward pass using a straight-through trick, allowing us to compute useful gradients without modifying the forward simulation.
 </div>
-
-</td>
-</tr>
-
-
-<tr id="tr-paulus2025safetyalignmentlmsnoncooperative" style="background-color: #ffffd0">
-<td align='right' style='padding-left:0;padding-right:0;'>
-3.
-</td>
-<td>
-<a href='https://arxiv.org/abs/2512.20806' target='_blank'><img src="images/publications/paulus2025safetyalignmentlmsnoncooperative.png" onerror="this.style.display='none'" class="publicationImg" /></a> 
-<em><a href='https://arxiv.org/abs/2512.20806' target='_blank'>Safety Alignment of LMs via Non-cooperative Games</a> </em> <br>
-<strong>Anselm&nbsp;Paulus</strong>, <a href='https://scholar.google.com/citations?user=fN7fYXIAAAAJ' target='_blank'>Ilia&nbsp;Kulikov</a>, <a href='https://bamos.github.io/' target='_blank'>Brandon&nbsp;Amos</a>, <a href='https://chercheurs.lille.inria.fr/munos/' target='_blank'>Rémi&nbsp;Munos</a>, <a href='https://ivanevtimov.eu' target='_blank'>Ivan&nbsp;Evtimov</a>, <a href='https://scholar.google.com/citations?user=X8H76XIAAAAJ' target='_blank'>Kamalika&nbsp;Chaudhuri</a>, and <a href='https://arman-z.github.io/' target='_blank'>Arman&nbsp;Zharmagambetov</a><br>
-Under submission 2025  <br>
 
 </td>
 </tr>
@@ -299,7 +302,7 @@ Building on recent progress at the intersection of combinatorial optimization an
 <tr>
   <td align='right' style='padding-right:0;padding-left:0;'>1.</td>
   <td>
-    <span class='cvdate'>2025</span>
+    <span class='cvdate'>2026</span>
     <a href="https://github.com/facebookresearch/advgame">facebookresearch/advgame</a>
     <span style="white-space: nowrap">
     | <i class="fa fas fa-star"></i>&nbsp;16 |

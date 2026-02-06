@@ -1,10 +1,5 @@
 <p>
 I am a PhD student with the IMPRS-IS program at the University of Tuebingen and the Max-Planck-Institute for Intelligent Systems, supervised by <a href="https://uni-tuebingen.de/en/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/distributed-intelligence/team/prof-dr-georg-martius/">Georg Martius</a>.
-I am interested in <b>differentiable and amortized optimization, LLM safety and reasoning</b>.
-Currently I am interning in the
-<b>Fundamental AI Research (FAIR)</b>
-group at
-<b>Meta</b> in Menlo Park, where I study LLM safety from a game-theoretical perspective, supervised by <a href="https://arman-z.github.io">Arman Zharmagambetov</a>.
 
 A few major themes of my research involve:
 </p>
@@ -12,19 +7,21 @@ A few major themes of my research involve:
 <ol>
 <li>
   <b>attacking language models</b> to improve safety and alignment
-  (in <a href="https://arxiv.org/abs/2404.16873">AdvPrompter</a>)
+  (in <a href="https://arxiv.org/abs/2512.20806">AdvGame</a> and <a href="https://arxiv.org/abs/2404.16873">AdvPrompter</a>)
 </li>
 <li>
   <b>differentiable combinatorial optimization</b>
   (in
   <a href="https://arxiv.org/abs/1912.02175">blackbox solver differentiation</a>,
   <a href="https://arxiv.org/abs/2105.02343">CombOptNet</a>, and
-  <a href="https://arxiv.org/abs/2407.05920v1">LPGD</a>)
+  <a href="https://arxiv.org/abs/2407.05920v1">LPGD</a>
+  )
 </li>
 <li>
   <b>differentiable physics simulation</b>
   (in
-  <a href="https://arxiv.org/abs/2506.14186">DiffMJX</a>)
+  <a href="https://arxiv.org/abs/2506.14186">DiffMJX</a> and 
+  <a href="https://github.com/a-paulus/softjax">SoftJAX</a>)
 </li>
 </ol>
 <br>
@@ -62,6 +59,15 @@ A few major themes of my research involve:
 
 ## <i class="fa fa-chevron-right"></i> Previous Positions
 <table class="table table-hover">
+<tr>
+  <td style='padding-right:0;'>
+<span class='cvdate'>2025&nbsp;-&nbsp;2026</span>
+<p markdown="1" style='margin: 0'><strong>Research Scientist Intern</strong>, <em>Meta, Fundamental AI Research (FAIR)</em>, Menlo Park, CA
+<span markdown="1" style="color:grey;font-size:1.3rem;margin: 0">
+(with <a href="https://arman-z.github.io" target="_blank">Arman Zharmagambetov</a> on game-theoretical perspectives on LLM safety)
+</span></p>
+  </td>
+</tr>
 <tr>
   <td style='padding-right:0;'>
 <span class='cvdate'>2023&nbsp;-&nbsp;2024</span>
@@ -118,7 +124,7 @@ Large Language Models (LLMs) are vulnerable to jailbreaking attacks that lead to
 </tr>
 
 
-<tr id="tr-paulus2025hard" style="background-color: #ffffd0">
+<tr id="tr-paulus2025hard" >
 <td align='right' style='padding-left:0;padding-right:0;'>
 2.
 </td>
@@ -128,11 +134,25 @@ Large Language Models (LLMs) are vulnerable to jailbreaking attacks that lead to
 [<a href='javascript:;'
     onclick='$("#abs_paulus2025hard").toggle()'>abs</a>]<br>
 <strong>Anselm&nbsp;Paulus*</strong>, <a href='https://andregeist.github.io' target='_blank'>Andreas&nbsp;René&nbsp;Geist*</a>, <a href='https://p-schumacher.github.io' target='_blank'>Pierre&nbsp;Schumacher</a>, <a href='https://scholar.google.com/citations?user=hA1rlU4AAAAJ' target='_blank'>Vít&nbsp;Musil</a>, and <a href='https://scholar.google.com/citations?user=b-JF-UIAAAAJ' target='_blank'>Georg&nbsp;Martius</a><br>
-Under submission 2025  <br>
+ICLR 2025  <br>
 
 <div id="abs_paulus2025hard" style="text-align: justify; display: none" markdown="1">
 Contact forces pose a major challenge for gradient-based optimization of robot dynamics as they introduce jumps in the system's velocities. Penalty-based simulators, such as MuJoCo, simplify gradient computation by softening the contact forces. However, realistically simulating hard contacts requires very stiff contact settings, which leads to incorrect gradients when using automatic differentiation. On the other hand, using non-stiff settings strongly increases the sim-to-real gap. We analyze the contact computation of penalty-based simulators to identify the causes of gradient errors. Then, we propose DiffMJX, which combines adaptive integration with MuJoCo XLA, to notably improve gradient quality in the presence of hard contacts. Finally, we address a key limitation of contact gradients: they vanish when objects do not touch. To overcome this, we introduce Contacts From Distance (CFD), a mechanism that enables the simulator to generate informative contact gradients even before objects are in contact. To preserve physical realism, we apply CFD only in the backward pass using a straight-through trick, allowing us to compute useful gradients without modifying the forward simulation.
 </div>
+
+</td>
+</tr>
+
+
+<tr id="tr-paulus2025safetyalignmentlmsnoncooperative" style="background-color: #ffffd0">
+<td align='right' style='padding-left:0;padding-right:0;'>
+3.
+</td>
+<td>
+<a href='https://arxiv.org/abs/2512.20806' target='_blank'><img src="images/publications/paulus2025safetyalignmentlmsnoncooperative.png" onerror="this.style.display='none'" class="publicationImg" /></a> 
+<em><a href='https://arxiv.org/abs/2512.20806' target='_blank'>Safety Alignment of LMs via Non-cooperative Games</a> </em> <br>
+<strong>Anselm&nbsp;Paulus</strong>, <a href='https://scholar.google.com/citations?user=fN7fYXIAAAAJ' target='_blank'>Ilia&nbsp;Kulikov</a>, <a href='https://bamos.github.io/' target='_blank'>Brandon&nbsp;Amos</a>, <a href='https://chercheurs.lille.inria.fr/munos/' target='_blank'>Rémi&nbsp;Munos</a>, <a href='https://ivanevtimov.eu' target='_blank'>Ivan&nbsp;Evtimov</a>, <a href='https://scholar.google.com/citations?user=X8H76XIAAAAJ' target='_blank'>Kamalika&nbsp;Chaudhuri</a>, and <a href='https://arman-z.github.io/' target='_blank'>Arman&nbsp;Zharmagambetov</a><br>
+Under submission 2025  <br>
 
 </td>
 </tr>
@@ -143,7 +163,7 @@ Contact forces pose a major challenge for gradient-based optimization of robot d
 
 <tr id="tr-paulus2024lpgd" style="background-color: #ffffd0">
 <td align='right' style='padding-left:0;padding-right:0;'>
-3.
+4.
 </td>
 <td>
 <a href='https://arxiv.org/abs/2407.05920' target='_blank'><img src="images/publications/paulus2024lpgd.png" onerror="this.style.display='none'" class="publicationImg" /></a> 
@@ -166,7 +186,7 @@ Embedding parameterized optimization problems as layers into machine learning ar
 
 <tr id="tr-sahoo2024gradient" >
 <td align='right' style='padding-left:0;padding-right:0;'>
-4.
+5.
 </td>
 <td>
 <a href='https://arxiv.org/abs/2205.15213' target='_blank'><img src="images/publications/sahoo2024gradient.png" onerror="this.style.display='none'" class="publicationImg" /></a> 
@@ -189,7 +209,7 @@ Embedding discrete solvers as differentiable layers has given modern deep learni
 
 <tr id="tr-paulus2021comboptnet" >
 <td align='right' style='padding-left:0;padding-right:0;'>
-5.
+6.
 </td>
 <td>
 <a href='https://arxiv.org/pdf/2105.02343' target='_blank'><img src="images/publications/paulus2021comboptnet.png" onerror="this.style.display='none'" class="publicationImg" /></a> 
@@ -212,7 +232,7 @@ Bridging logical and algorithmic reasoning with modern machine learning techniqu
 
 <tr id="tr-vlastelica2020differentiation" style="background-color: #ffffd0">
 <td align='right' style='padding-left:0;padding-right:0;'>
-6.
+7.
 </td>
 <td>
 <a href='http://arxiv.org/abs/1912.02175' target='_blank'><img src="images/publications/vlastelica2020differentiation.png" onerror="this.style.display='none'" class="publicationImg" /></a> 
@@ -232,7 +252,7 @@ Achieving fusion of deep learning with combinatorial algorithms promises transfo
 
 <tr id="tr-rolinek2020optimizing" >
 <td align='right' style='padding-left:0;padding-right:0;'>
-7.
+8.
 </td>
 <td>
 <a href='http://arxiv.org/abs/1912.03500' target='_blank'><img src="images/publications/rolinek2020optimizing.png" onerror="this.style.display='none'" class="publicationImg" /></a> 
@@ -252,7 +272,7 @@ Rank-based metrics are some of the most widely used criteria for performance eva
 
 <tr id="tr-rolinek2020deepgraphmatching" >
 <td align='right' style='padding-left:0;padding-right:0;'>
-8.
+9.
 </td>
 <td>
 <a href='https://arxiv.org/abs/2003.11657' target='_blank'><img src="images/publications/rolinek2020deepgraphmatching.png" onerror="this.style.display='none'" class="publicationImg" /></a> 
@@ -280,15 +300,37 @@ Building on recent progress at the intersection of combinatorial optimization an
   <td align='right' style='padding-right:0;padding-left:0;'>1.</td>
   <td>
     <span class='cvdate'>2025</span>
-    <a href="https://github.com/a-paulus/softjax">a-paulus/softjax</a>
+    <a href="https://github.com/facebookresearch/advgame">facebookresearch/advgame</a>
     <span style="white-space: nowrap">
-    | <i class="fa fas fa-star"></i>&nbsp;0 |
+    | <i class="fa fas fa-star"></i>&nbsp;16 |
     </span>
-    <em>Softjax (library for differentiable operations in JAX)</em>
+    <em>AdvGame (Adversarial attacks on LLMs)</em>
   </td>
 </tr>
 <tr>
   <td align='right' style='padding-right:0;padding-left:0;'>2.</td>
+  <td>
+    <span class='cvdate'>2025</span>
+    <a href="https://github.com/a-paulus/softtorch">a-paulus/softtorch</a>
+    <span style="white-space: nowrap">
+    | <i class="fa fas fa-star"></i>&nbsp;3 |
+    </span>
+    <em>SoftTorch (library for differentiable operations in PyTorch)</em>
+  </td>
+</tr>
+<tr>
+  <td align='right' style='padding-right:0;padding-left:0;'>3.</td>
+  <td>
+    <span class='cvdate'>2025</span>
+    <a href="https://github.com/a-paulus/softjax">a-paulus/softjax</a>
+    <span style="white-space: nowrap">
+    | <i class="fa fas fa-star"></i>&nbsp;0 |
+    </span>
+    <em>SoftJAX (library for differentiable operations in JAX)</em>
+  </td>
+</tr>
+<tr>
+  <td align='right' style='padding-right:0;padding-left:0;'>4.</td>
   <td>
     <span class='cvdate'>2025</span>
     <a href="https://github.com/facebookresearch/advprompter">facebookresearch/advprompter</a>
@@ -299,7 +341,7 @@ Building on recent progress at the intersection of combinatorial optimization an
   </td>
 </tr>
 <tr>
-  <td align='right' style='padding-right:0;padding-left:0;'>3.</td>
+  <td align='right' style='padding-right:0;padding-left:0;'>5.</td>
   <td>
     <span class='cvdate'>2024</span>
     <a href="https://github.com/martius-lab/diffcp-lpgd">martius-lab/diffcp-lpgd</a>
@@ -310,7 +352,7 @@ Building on recent progress at the intersection of combinatorial optimization an
   </td>
 </tr>
 <tr>
-  <td align='right' style='padding-right:0;padding-left:0;'>4.</td>
+  <td align='right' style='padding-right:0;padding-left:0;'>6.</td>
   <td>
     <span class='cvdate'>2023</span>
     <a href="https://github.com/martius-lab/solver-differentiation-identity">martius-lab/solver-differentiation-identity</a>
@@ -321,7 +363,7 @@ Building on recent progress at the intersection of combinatorial optimization an
   </td>
 </tr>
 <tr>
-  <td align='right' style='padding-right:0;padding-left:0;'>5.</td>
+  <td align='right' style='padding-right:0;padding-left:0;'>7.</td>
   <td>
     <span class='cvdate'>2021</span>
     <a href="https://github.com/martius-lab/CombOptNet">martius-lab/CombOptNet</a>
@@ -332,7 +374,7 @@ Building on recent progress at the intersection of combinatorial optimization an
   </td>
 </tr>
 <tr>
-  <td align='right' style='padding-right:0;padding-left:0;'>6.</td>
+  <td align='right' style='padding-right:0;padding-left:0;'>8.</td>
   <td>
     <span class='cvdate'>2020</span>
     <a href="https://github.com/martius-lab/blackbox-deep-graph-matching">martius-lab/blackbox-deep-graph-matching</a>
@@ -343,7 +385,7 @@ Building on recent progress at the intersection of combinatorial optimization an
   </td>
 </tr>
 <tr>
-  <td align='right' style='padding-right:0;padding-left:0;'>7.</td>
+  <td align='right' style='padding-right:0;padding-left:0;'>9.</td>
   <td>
     <span class='cvdate'>2020</span>
     <a href="https://github.com/martius-lab/blackbox-backprop">martius-lab/blackbox-backprop</a>

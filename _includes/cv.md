@@ -20,8 +20,9 @@ A few major themes of my research involve:
 <li>
   <b>differentiable physics simulation</b>
   (in
-  <a href="https://arxiv.org/abs/2506.14186">DiffMJX</a> and 
-  <a href="https://github.com/a-paulus/softjax">SoftJAX</a>)
+  <a href="https://arxiv.org/abs/2506.14186">DiffMJX</a>, 
+  <a href="https://github.com/a-paulus/softjax">SoftJAX</a>) and
+  <a href="https://github.com/a-paulus/softtorch">SoftTorch</a>)
 </li>
 </ol>
 <br>
@@ -94,25 +95,71 @@ A few major themes of my research involve:
 <!-- I usually publish at machine learning conferences, -->
 <!-- including . -->
 <!-- <a href="https://scholar.google.com/citations?user=njZL5CQAAAAJ">Google Scholar</a> -->
-<!-- reports 0.9k+ citations and an h-index of 6. -->
+<!-- reports 1k+ citations and an h-index of 6. -->
 <!-- The selected publications I am a primary author on are <span style='background-color: #ffffd0'>highlighted.</span> -->
 
-<!-- [<a href="https://scholar.google.com/citations?user=njZL5CQAAAAJ">Google Scholar</a>: 0.9k+ citations and an h-index of 6] <br> -->
-[<a href="https://scholar.google.com/citations?user=njZL5CQAAAAJ">Google Scholar</a>: 0.9k+ citations] <br>
+<!-- [<a href="https://scholar.google.com/citations?user=njZL5CQAAAAJ">Google Scholar</a>: 1k+ citations and an h-index of 6] <br> -->
+[<a href="https://scholar.google.com/citations?user=njZL5CQAAAAJ">Google Scholar</a>: 1k+ citations] <br>
 Selected publications I am a primary author on are <span style='background-color: #ffffd0'>highlighted.</span>
 
 <h2>2026</h2>
 <table class="table table-hover">
 
-<tr id="tr-paulus2026advgame" style="background-color: #ffffd0">
+<tr id="tr-paulus2026hard" >
 <td align='right' style='padding-left:0;padding-right:0;'>
 1.
 </td>
 <td>
+<a href='https://arxiv.org/abs/2506.14186' target='_blank'><img src="images/publications/paulus2026hard.png" onerror="this.style.display='none'" class="publicationImg" /></a> 
+<em><a href='https://arxiv.org/abs/2506.14186' target='_blank'>Hard Contacts with Soft Gradients: Refining Differentiable Simulators for Learning and Control</a> </em> 
+[<a href='javascript:;'
+    onclick='$("#abs_paulus2026hard").toggle()'>abs</a>]<br>
+<strong>Anselm&nbsp;Paulus*</strong>, <a href='https://andregeist.github.io' target='_blank'>Andreas&nbsp;René&nbsp;Geist*</a>, <a href='https://p-schumacher.github.io' target='_blank'>Pierre&nbsp;Schumacher</a>, <a href='https://scholar.google.com/citations?user=hA1rlU4AAAAJ' target='_blank'>Vít&nbsp;Musil</a>, and <a href='https://scholar.google.com/citations?user=b-JF-UIAAAAJ' target='_blank'>Georg&nbsp;Martius</a><br>
+ICLR 2026  <br>
+
+<div id="abs_paulus2026hard" style="text-align: justify; display: none" markdown="1">
+Contact forces pose a major challenge for gradient-based optimization of robot dynamics as they introduce jumps in the system's velocities. Penalty-based simulators, such as MuJoCo, simplify gradient computation by softening the contact forces. However, realistically simulating hard contacts requires very stiff contact settings, which leads to incorrect gradients when using automatic differentiation. On the other hand, using non-stiff settings strongly increases the sim-to-real gap. We analyze the contact computation of penalty-based simulators to identify the causes of gradient errors. Then, we propose DiffMJX, which combines adaptive integration with MuJoCo XLA, to notably improve gradient quality in the presence of hard contacts. Finally, we address a key limitation of contact gradients: they vanish when objects do not touch. To overcome this, we introduce Contacts From Distance (CFD), a mechanism that enables the simulator to generate informative contact gradients even before objects are in contact. To preserve physical realism, we apply CFD only in the backward pass using a straight-through trick, allowing us to compute useful gradients without modifying the forward simulation.
+</div>
+
+</td>
+</tr>
+
+
+<tr id="tr-paulus2026advgame" style="background-color: #ffffd0">
+<td align='right' style='padding-left:0;padding-right:0;'>
+2.
+</td>
+<td>
 <a href='https://arxiv.org/abs/2512.20806' target='_blank'><img src="images/publications/paulus2026advgame.png" onerror="this.style.display='none'" class="publicationImg" /></a> 
-<em><a href='https://arxiv.org/abs/2512.20806' target='_blank'>Safety Alignment of LMs via Non-cooperative Games</a> </em> <br>
+<em><a href='https://arxiv.org/abs/2512.20806' target='_blank'>Safety Alignment of LMs via Non-cooperative Games</a> </em> 
+[<a href='javascript:;'
+    onclick='$("#abs_paulus2026advgame").toggle()'>abs</a>]<br>
 <strong>Anselm&nbsp;Paulus</strong>, <a href='https://scholar.google.com/citations?user=fN7fYXIAAAAJ' target='_blank'>Ilia&nbsp;Kulikov</a>, <a href='https://bamos.github.io/' target='_blank'>Brandon&nbsp;Amos</a>, <a href='https://chercheurs.lille.inria.fr/munos/' target='_blank'>Rémi&nbsp;Munos</a>, <a href='https://ivanevtimov.eu' target='_blank'>Ivan&nbsp;Evtimov</a>, <a href='https://scholar.google.com/citations?user=X8H76XIAAAAJ' target='_blank'>Kamalika&nbsp;Chaudhuri</a>, and <a href='https://arman-z.github.io/' target='_blank'>Arman&nbsp;Zharmagambetov</a><br>
 Under submission 2026  <br>
+
+<div id="abs_paulus2026advgame" style="text-align: justify; display: none" markdown="1">
+Ensuring the safety of language models (LMs) while maintaining their usefulness remains a critical challenge in AI alignment. Current approaches rely on sequential adversarial training: generating adversarial prompts and fine-tuning LMs to defend against them. We introduce a different paradigm: framing safety alignment as a non-zero-sum game between an Attacker LM and a Defender LM trained jointly via online reinforcement learning. Each LM continuously adapts to the other's evolving strategies, driving iterative improvement. Our method uses a preference-based reward signal derived from pairwise comparisons instead of point-wise scores, providing more robust supervision and potentially reducing reward hacking. Our RL recipe, AdvGame, shifts the Pareto frontier of safety and utility, yielding a Defender LM that is simultaneously more helpful and more resilient to adversarial attacks. In addition, the resulting Attacker LM converges into a strong, general-purpose red-teaming agent that can be directly deployed to probe arbitrary target models.
+</div>
+
+</td>
+</tr>
+
+
+<tr id="tr-paulus2026softjaxsofttorch" style="background-color: #ffffd0">
+<td align='right' style='padding-left:0;padding-right:0;'>
+3.
+</td>
+<td>
+<a href='https://arxiv.org/abs/2603.08824' target='_blank'><img src="images/publications/paulus2026softjaxsofttorch.png" onerror="this.style.display='none'" class="publicationImg" /></a> 
+<em><a href='https://arxiv.org/abs/2603.08824' target='_blank'>SoftJAX & SoftTorch: Empowering Automatic Differentiation Libraries with Informative Gradients</a> </em> 
+[<a href='javascript:;'
+    onclick='$("#abs_paulus2026softjaxsofttorch").toggle()'>abs</a>]<br>
+<strong>Anselm&nbsp;Paulus</strong>, <a href='https://andregeist.github.io' target='_blank'>A.&nbsp;René&nbsp;Geist</a>, <a href='https://scholar.google.com/citations?user=hA1rlU4AAAAJ' target='_blank'>Vít&nbsp;Musil</a>, <a href='https://scholar.google.com/citations?user=s6wolrEAAAAJ' target='_blank'>Sebastian&nbsp;Hoffmann</a>, <a href='https://scholar.google.com/citations?user=swMOohkAAAAJ' target='_blank'>Onur&nbsp;Beker</a>, and <a href='https://scholar.google.com/citations?user=b-JF-UIAAAAJ' target='_blank'>Georg&nbsp;Martius</a><br>
+Under submission 2026  <br>
+
+<div id="abs_paulus2026softjaxsofttorch" style="text-align: justify; display: none" markdown="1">
+Automatic differentiation (AD) frameworks such as JAX and PyTorch have enabled gradient-based optimization for a wide range of scientific fields. Yet, many "hard" primitives in these libraries such as thresholding, Boolean logic, discrete indexing, and sorting operations yield zero or undefined gradients that are not useful for optimization. While numerous "soft" relaxations have been proposed that provide informative gradients, the respective implementations are fragmented across projects, making them difficult to combine and compare. This work introduces SoftJAX and SoftTorch, open-source, feature-complete libraries for soft differentiable programming. These libraries provide a variety of soft functions as drop-in replacements for their hard JAX and PyTorch counterparts. This includes (i) elementwise operators such as clip or abs, (ii) utility methods for manipulating Booleans and indices via fuzzy logic, (iii) axiswise operators such as sort or rank&nbsp;-&nbsp;based on optimal transport or permutahedron projections, and (iv) offer full support for straight-through gradient estimation. Overall, SoftJAX and SoftTorch make the toolbox of soft relaxations easily accessible to differentiable programming, as demonstrated through benchmarking and a practical case study. Code is available at github.com/a-paulus/softjax and github.com/a-paulus/softtorch.
+</div>
 
 </td>
 </tr>
@@ -123,7 +170,7 @@ Under submission 2026  <br>
 
 <tr id="tr-paulus2025advprompter" style="background-color: #ffffd0">
 <td align='right' style='padding-left:0;padding-right:0;'>
-2.
+4.
 </td>
 <td>
 <a href='https://arxiv.org/abs/2404.16873' target='_blank'><img src="images/publications/paulus2025advprompter.png" onerror="this.style.display='none'" class="publicationImg" /></a> 
@@ -140,33 +187,13 @@ Large Language Models (LLMs) are vulnerable to jailbreaking attacks that lead to
 </td>
 </tr>
 
-
-<tr id="tr-paulus2025hard" >
-<td align='right' style='padding-left:0;padding-right:0;'>
-3.
-</td>
-<td>
-<a href='https://arxiv.org/abs/2506.14186' target='_blank'><img src="images/publications/paulus2025hard.png" onerror="this.style.display='none'" class="publicationImg" /></a> 
-<em><a href='https://arxiv.org/abs/2506.14186' target='_blank'>Hard Contacts with Soft Gradients: Refining Differentiable Simulators for Learning and Control</a> </em> 
-[<a href='javascript:;'
-    onclick='$("#abs_paulus2025hard").toggle()'>abs</a>]<br>
-<strong>Anselm&nbsp;Paulus*</strong>, <a href='https://andregeist.github.io' target='_blank'>Andreas&nbsp;René&nbsp;Geist*</a>, <a href='https://p-schumacher.github.io' target='_blank'>Pierre&nbsp;Schumacher</a>, <a href='https://scholar.google.com/citations?user=hA1rlU4AAAAJ' target='_blank'>Vít&nbsp;Musil</a>, and <a href='https://scholar.google.com/citations?user=b-JF-UIAAAAJ' target='_blank'>Georg&nbsp;Martius</a><br>
-ICLR 2025  <br>
-
-<div id="abs_paulus2025hard" style="text-align: justify; display: none" markdown="1">
-Contact forces pose a major challenge for gradient-based optimization of robot dynamics as they introduce jumps in the system's velocities. Penalty-based simulators, such as MuJoCo, simplify gradient computation by softening the contact forces. However, realistically simulating hard contacts requires very stiff contact settings, which leads to incorrect gradients when using automatic differentiation. On the other hand, using non-stiff settings strongly increases the sim-to-real gap. We analyze the contact computation of penalty-based simulators to identify the causes of gradient errors. Then, we propose DiffMJX, which combines adaptive integration with MuJoCo XLA, to notably improve gradient quality in the presence of hard contacts. Finally, we address a key limitation of contact gradients: they vanish when objects do not touch. To overcome this, we introduce Contacts From Distance (CFD), a mechanism that enables the simulator to generate informative contact gradients even before objects are in contact. To preserve physical realism, we apply CFD only in the backward pass using a straight-through trick, allowing us to compute useful gradients without modifying the forward simulation.
-</div>
-
-</td>
-</tr>
-
 </table>
 <h2>2024</h2>
 <table class="table table-hover">
 
-<tr id="tr-paulus2024lpgd" style="background-color: #ffffd0">
+<tr id="tr-paulus2024lpgd" >
 <td align='right' style='padding-left:0;padding-right:0;'>
-4.
+5.
 </td>
 <td>
 <a href='https://arxiv.org/abs/2407.05920' target='_blank'><img src="images/publications/paulus2024lpgd.png" onerror="this.style.display='none'" class="publicationImg" /></a> 
@@ -189,7 +216,7 @@ Embedding parameterized optimization problems as layers into machine learning ar
 
 <tr id="tr-sahoo2024gradient" >
 <td align='right' style='padding-left:0;padding-right:0;'>
-5.
+6.
 </td>
 <td>
 <a href='https://arxiv.org/abs/2205.15213' target='_blank'><img src="images/publications/sahoo2024gradient.png" onerror="this.style.display='none'" class="publicationImg" /></a> 
@@ -212,7 +239,7 @@ Embedding discrete solvers as differentiable layers has given modern deep learni
 
 <tr id="tr-paulus2021comboptnet" >
 <td align='right' style='padding-left:0;padding-right:0;'>
-6.
+7.
 </td>
 <td>
 <a href='https://arxiv.org/pdf/2105.02343' target='_blank'><img src="images/publications/paulus2021comboptnet.png" onerror="this.style.display='none'" class="publicationImg" /></a> 
@@ -235,7 +262,7 @@ Bridging logical and algorithmic reasoning with modern machine learning techniqu
 
 <tr id="tr-vlastelica2020differentiation" style="background-color: #ffffd0">
 <td align='right' style='padding-left:0;padding-right:0;'>
-7.
+8.
 </td>
 <td>
 <a href='http://arxiv.org/abs/1912.02175' target='_blank'><img src="images/publications/vlastelica2020differentiation.png" onerror="this.style.display='none'" class="publicationImg" /></a> 
@@ -255,7 +282,7 @@ Achieving fusion of deep learning with combinatorial algorithms promises transfo
 
 <tr id="tr-rolinek2020optimizing" >
 <td align='right' style='padding-left:0;padding-right:0;'>
-8.
+9.
 </td>
 <td>
 <a href='http://arxiv.org/abs/1912.03500' target='_blank'><img src="images/publications/rolinek2020optimizing.png" onerror="this.style.display='none'" class="publicationImg" /></a> 
@@ -275,7 +302,7 @@ Rank-based metrics are some of the most widely used criteria for performance eva
 
 <tr id="tr-rolinek2020deepgraphmatching" >
 <td align='right' style='padding-left:0;padding-right:0;'>
-9.
+10.
 </td>
 <td>
 <a href='https://arxiv.org/abs/2003.11657' target='_blank'><img src="images/publications/rolinek2020deepgraphmatching.png" onerror="this.style.display='none'" class="publicationImg" /></a> 
@@ -296,27 +323,27 @@ Building on recent progress at the intersection of combinatorial optimization an
 
 
 ## <i class="fa fa-chevron-right"></i> Open Source Repositories
-0.6k+ GitHub stars across all repositories.
+0.7k+ GitHub stars across all repositories.
 
 <table class="table table-hover">
 <tr>
   <td align='right' style='padding-right:0;padding-left:0;'>1.</td>
   <td>
     <span class='cvdate'>2026</span>
-    <a href="https://github.com/facebookresearch/advgame">facebookresearch/advgame</a>
+    <a href="https://github.com/a-paulus/softjax">a-paulus/softjax</a>
     <span style="white-space: nowrap">
-    | <i class="fa fas fa-star"></i>&nbsp;16 |
+    | <i class="fa fas fa-star"></i>&nbsp;32 |
     </span>
-    <em>AdvGame (Adversarial attacks on LLMs)</em>
+    <em>SoftJAX (library for differentiable operations in JAX)</em>
   </td>
 </tr>
 <tr>
   <td align='right' style='padding-right:0;padding-left:0;'>2.</td>
   <td>
-    <span class='cvdate'>2025</span>
+    <span class='cvdate'>2026</span>
     <a href="https://github.com/a-paulus/softtorch">a-paulus/softtorch</a>
     <span style="white-space: nowrap">
-    | <i class="fa fas fa-star"></i>&nbsp;3 |
+    | <i class="fa fas fa-star"></i>&nbsp;28 |
     </span>
     <em>SoftTorch (library for differentiable operations in PyTorch)</em>
   </td>
@@ -324,12 +351,12 @@ Building on recent progress at the intersection of combinatorial optimization an
 <tr>
   <td align='right' style='padding-right:0;padding-left:0;'>3.</td>
   <td>
-    <span class='cvdate'>2025</span>
-    <a href="https://github.com/a-paulus/softjax">a-paulus/softjax</a>
+    <span class='cvdate'>2026</span>
+    <a href="https://github.com/facebookresearch/advgame">facebookresearch/advgame</a>
     <span style="white-space: nowrap">
-    | <i class="fa fas fa-star"></i>&nbsp;0 |
+    | <i class="fa fas fa-star"></i>&nbsp;17 |
     </span>
-    <em>SoftJAX (library for differentiable operations in JAX)</em>
+    <em>AdvGame (Adversarial attacks on LLMs)</em>
   </td>
 </tr>
 <tr>
@@ -338,7 +365,7 @@ Building on recent progress at the intersection of combinatorial optimization an
     <span class='cvdate'>2025</span>
     <a href="https://github.com/facebookresearch/advprompter">facebookresearch/advprompter</a>
     <span style="white-space: nowrap">
-    | <i class="fa fas fa-star"></i>&nbsp;162 |
+    | <i class="fa fas fa-star"></i>&nbsp;180 |
     </span>
     <em>AdvPrompter (Adversarial attacks on LLMs)</em>
   </td>
@@ -360,7 +387,7 @@ Building on recent progress at the intersection of combinatorial optimization an
     <span class='cvdate'>2023</span>
     <a href="https://github.com/martius-lab/solver-differentiation-identity">martius-lab/solver-differentiation-identity</a>
     <span style="white-space: nowrap">
-    | <i class="fa fas fa-star"></i>&nbsp;10 |
+    | <i class="fa fas fa-star"></i>&nbsp;11 |
     </span>
     <em>Blackbox Identity Differentiation</em>
   </td>
@@ -371,7 +398,7 @@ Building on recent progress at the intersection of combinatorial optimization an
     <span class='cvdate'>2021</span>
     <a href="https://github.com/martius-lab/CombOptNet">martius-lab/CombOptNet</a>
     <span style="white-space: nowrap">
-    | <i class="fa fas fa-star"></i>&nbsp;72 |
+    | <i class="fa fas fa-star"></i>&nbsp;74 |
     </span>
     <em>CombOptNet</em>
   </td>
@@ -393,7 +420,7 @@ Building on recent progress at the intersection of combinatorial optimization an
     <span class='cvdate'>2020</span>
     <a href="https://github.com/martius-lab/blackbox-backprop">martius-lab/blackbox-backprop</a>
     <span style="white-space: nowrap">
-    | <i class="fa fas fa-star"></i>&nbsp;346 |
+    | <i class="fa fas fa-star"></i>&nbsp;349 |
     </span>
     <em>Blackbox Differentiation</em>
   </td>

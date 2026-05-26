@@ -1,5 +1,5 @@
 <p>
-I am a PhD student with the IMPRS-IS program at the University of Tuebingen and the Max-Planck-Institute for Intelligent Systems, supervised by <a href="https://uni-tuebingen.de/en/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/distributed-intelligence/team/prof-dr-georg-martius/">Georg Martius</a>.
+I am wrapping up my PhD with the IMPRS-IS program at the University of Tuebingen and the Max-Planck-Institute for Intelligent Systems, supervised by <a href="https://uni-tuebingen.de/en/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/distributed-intelligence/team/prof-dr-georg-martius/">Georg Martius</a>.
 
 A few major themes of my research involve:
 </p>
@@ -20,11 +20,15 @@ A few major themes of my research involve:
 <li>
   <b>differentiable physics simulation</b>
   (in
-  <a href="https://arxiv.org/abs/2506.14186">DiffMJX</a>, 
-  <a href="https://github.com/a-paulus/softjax">SoftJAX</a>) and
+  <a href="https://arxiv.org/abs/2506.14186">DiffMJX</a>,
+  <a href="https://github.com/a-paulus/softjax">SoftJAX</a>, and
   <a href="https://github.com/a-paulus/softtorch">SoftTorch</a>)
 </li>
 </ol>
+
+<p>
+I am now building something incredibly exciting in the AI safety &amp; security space with a great group of people &mdash; please <a href="mailto:anselm@expsec.ai">reach out to me</a> if this sounds interesting!
+</p>
 <br>
 
 
@@ -80,7 +84,7 @@ A few major themes of my research involve:
 </tr>
 <tr>
   <td style='padding-right:0;'>
-<span class='cvdate'>2016&nbsp;-&nbsp;2019</span>
+<span class='cvdate'>2018&nbsp;-&nbsp;2022</span>
 <p markdown="1" style='margin: 0'><strong>Research Assistant</strong>, <em>Max-Planck-Institute for Intelligent Systems</em>, Tuebingen, Germany
 <span markdown="1" style="color:grey;font-size:1.3rem;margin: 0">
 (with <a href="https://uni-tuebingen.de/en/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/distributed-intelligence/team/prof-dr-georg-martius/" target="_blank">Georg Martius</a> on differentiable combinatorial optimization)
@@ -93,7 +97,7 @@ A few major themes of my research involve:
 ## <i class="fa fa-chevron-right"></i> Publications
 
 <!-- I usually publish at machine learning conferences, -->
-<!-- including . -->
+<!-- including , and ICML (5 papers). -->
 <!-- <a href="https://scholar.google.com/citations?user=njZL5CQAAAAJ">Google Scholar</a> -->
 <!-- reports 1k+ citations and an h-index of 6. -->
 <!-- The selected publications I am a primary author on are <span style='background-color: #ffffd0'>highlighted.</span> -->
@@ -135,7 +139,7 @@ Contact forces pose a major challenge for gradient-based optimization of robot d
 [<a href='javascript:;'
     onclick='$("#abs_paulus2026advgame").toggle()'>abs</a>]<br>
 <strong>Anselm&nbsp;Paulus</strong>, <a href='https://scholar.google.com/citations?user=fN7fYXIAAAAJ' target='_blank'>Ilia&nbsp;Kulikov</a>, <a href='https://bamos.github.io/' target='_blank'>Brandon&nbsp;Amos</a>, <a href='https://chercheurs.lille.inria.fr/munos/' target='_blank'>Rémi&nbsp;Munos</a>, <a href='https://ivanevtimov.eu' target='_blank'>Ivan&nbsp;Evtimov</a>, <a href='https://scholar.google.com/citations?user=X8H76XIAAAAJ' target='_blank'>Kamalika&nbsp;Chaudhuri</a>, and <a href='https://arman-z.github.io/' target='_blank'>Arman&nbsp;Zharmagambetov</a><br>
-Under submission 2026  <br>
+ICML 2026 (Spotlight) <br>
 
 <div id="abs_paulus2026advgame" style="text-align: justify; display: none" markdown="1">
 Ensuring the safety of language models (LMs) while maintaining their usefulness remains a critical challenge in AI alignment. Current approaches rely on sequential adversarial training: generating adversarial prompts and fine-tuning LMs to defend against them. We introduce a different paradigm: framing safety alignment as a non-zero-sum game between an Attacker LM and a Defender LM trained jointly via online reinforcement learning. Each LM continuously adapts to the other's evolving strategies, driving iterative improvement. Our method uses a preference-based reward signal derived from pairwise comparisons instead of point-wise scores, providing more robust supervision and potentially reducing reward hacking. Our RL recipe, AdvGame, shifts the Pareto frontier of safety and utility, yielding a Defender LM that is simultaneously more helpful and more resilient to adversarial attacks. In addition, the resulting Attacker LM converges into a strong, general-purpose red-teaming agent that can be directly deployed to probe arbitrary target models.
@@ -155,7 +159,7 @@ Ensuring the safety of language models (LMs) while maintaining their usefulness 
 [<a href='javascript:;'
     onclick='$("#abs_paulus2026softjaxsofttorch").toggle()'>abs</a>]<br>
 <strong>Anselm&nbsp;Paulus</strong>, <a href='https://andregeist.github.io' target='_blank'>A.&nbsp;René&nbsp;Geist</a>, <a href='https://scholar.google.com/citations?user=hA1rlU4AAAAJ' target='_blank'>Vít&nbsp;Musil</a>, <a href='https://scholar.google.com/citations?user=s6wolrEAAAAJ' target='_blank'>Sebastian&nbsp;Hoffmann</a>, <a href='https://scholar.google.com/citations?user=swMOohkAAAAJ' target='_blank'>Onur&nbsp;Beker</a>, and <a href='https://scholar.google.com/citations?user=b-JF-UIAAAAJ' target='_blank'>Georg&nbsp;Martius</a><br>
-Under submission 2026  <br>
+ICML 2026 (Oral) <br>
 
 <div id="abs_paulus2026softjaxsofttorch" style="text-align: justify; display: none" markdown="1">
 Automatic differentiation (AD) frameworks such as JAX and PyTorch have enabled gradient-based optimization for a wide range of scientific fields. Yet, many "hard" primitives in these libraries such as thresholding, Boolean logic, discrete indexing, and sorting operations yield zero or undefined gradients that are not useful for optimization. While numerous "soft" relaxations have been proposed that provide informative gradients, the respective implementations are fragmented across projects, making them difficult to combine and compare. This work introduces SoftJAX and SoftTorch, open-source, feature-complete libraries for soft differentiable programming. These libraries provide a variety of soft functions as drop-in replacements for their hard JAX and PyTorch counterparts. This includes (i) elementwise operators such as clip or abs, (ii) utility methods for manipulating Booleans and indices via fuzzy logic, (iii) axiswise operators such as sort or rank&nbsp;-&nbsp;based on optimal transport or permutahedron projections, and (iv) offer full support for straight-through gradient estimation. Overall, SoftJAX and SoftTorch make the toolbox of soft relaxations easily accessible to differentiable programming, as demonstrated through benchmarking and a practical case study. Code is available at github.com/a-paulus/softjax and github.com/a-paulus/softtorch.

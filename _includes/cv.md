@@ -96,7 +96,7 @@ I am now building something incredibly exciting in the AI safety &amp; security 
 
 ## <i class="fa fa-chevron-right"></i> Publications
 
-[<a href="https://scholar.google.com/citations?user=njZL5CQAAAAJ">Google Scholar</a>: 1k+ citations]
+[<a href="https://scholar.google.com/citations?user=njZL5CQAAAAJ">Google Scholar</a>: 1.1k+ citations]
 
 <h2>2026</h2>
 <table class="table table-hover">
@@ -319,7 +319,7 @@ Building on recent progress at the intersection of combinatorial optimization an
 
 
 ## <i class="fa fa-chevron-right"></i> Open Source Repositories
-0.7k+ GitHub stars across all repositories.
+0.8k+ GitHub stars across all repositories.
 
 <table class="table table-hover">
 <tr>
@@ -328,7 +328,7 @@ Building on recent progress at the intersection of combinatorial optimization an
     <span class='cvdate'>2026</span>
     <a href="https://github.com/a-paulus/softjax">a-paulus/softjax</a>
     <span style="white-space: nowrap">
-    | <i class="fa fas fa-star"></i>&nbsp;32 |
+    | <i class="fa fas fa-star"></i>&nbsp;74 |
     </span>
     <em>SoftJAX (library for differentiable operations in JAX)</em>
   </td>
@@ -339,7 +339,7 @@ Building on recent progress at the intersection of combinatorial optimization an
     <span class='cvdate'>2026</span>
     <a href="https://github.com/a-paulus/softtorch">a-paulus/softtorch</a>
     <span style="white-space: nowrap">
-    | <i class="fa fas fa-star"></i>&nbsp;28 |
+    | <i class="fa fas fa-star"></i>&nbsp;72 |
     </span>
     <em>SoftTorch (library for differentiable operations in PyTorch)</em>
   </td>
@@ -350,7 +350,7 @@ Building on recent progress at the intersection of combinatorial optimization an
     <span class='cvdate'>2026</span>
     <a href="https://github.com/facebookresearch/advgame">facebookresearch/advgame</a>
     <span style="white-space: nowrap">
-    | <i class="fa fas fa-star"></i>&nbsp;17 |
+    | <i class="fa fas fa-star"></i>&nbsp;20 |
     </span>
     <em>AdvGame (Adversarial attacks on LLMs)</em>
   </td>
@@ -361,7 +361,7 @@ Building on recent progress at the intersection of combinatorial optimization an
     <span class='cvdate'>2025</span>
     <a href="https://github.com/facebookresearch/advprompter">facebookresearch/advprompter</a>
     <span style="white-space: nowrap">
-    | <i class="fa fas fa-star"></i>&nbsp;180 |
+    | <i class="fa fas fa-star"></i>&nbsp;181 |
     </span>
     <em>AdvPrompter (Adversarial attacks on LLMs)</em>
   </td>
@@ -372,7 +372,7 @@ Building on recent progress at the intersection of combinatorial optimization an
     <span class='cvdate'>2024</span>
     <a href="https://github.com/martius-lab/diffcp-lpgd">martius-lab/diffcp-lpgd</a>
     <span style="white-space: nowrap">
-    | <i class="fa fas fa-star"></i>&nbsp;2 |
+    | <i class="fa fas fa-star"></i>&nbsp;3 |
     </span>
     <em>Lagrangian Proximal Gradient Descent (now merged into <a href="https://github.com/cvxpy/cvxpy" target="_blank">CVXPY</a>)</em>
   </td>
@@ -383,7 +383,7 @@ Building on recent progress at the intersection of combinatorial optimization an
     <span class='cvdate'>2023</span>
     <a href="https://github.com/martius-lab/solver-differentiation-identity">martius-lab/solver-differentiation-identity</a>
     <span style="white-space: nowrap">
-    | <i class="fa fas fa-star"></i>&nbsp;11 |
+    | <i class="fa fas fa-star"></i>&nbsp;12 |
     </span>
     <em>Blackbox Identity Differentiation</em>
   </td>
@@ -405,7 +405,7 @@ Building on recent progress at the intersection of combinatorial optimization an
     <span class='cvdate'>2020</span>
     <a href="https://github.com/martius-lab/blackbox-deep-graph-matching">martius-lab/blackbox-deep-graph-matching</a>
     <span style="white-space: nowrap">
-    | <i class="fa fas fa-star"></i>&nbsp;88 |
+    | <i class="fa fas fa-star"></i>&nbsp;89 |
     </span>
     <em>Deep Graph Matching</em>
   </td>
@@ -416,7 +416,7 @@ Building on recent progress at the intersection of combinatorial optimization an
     <span class='cvdate'>2020</span>
     <a href="https://github.com/martius-lab/blackbox-backprop">martius-lab/blackbox-backprop</a>
     <span style="white-space: nowrap">
-    | <i class="fa fas fa-star"></i>&nbsp;349 |
+    | <i class="fa fas fa-star"></i>&nbsp;355 |
     </span>
     <em>Blackbox Differentiation</em>
   </td>

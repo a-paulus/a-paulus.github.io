@@ -96,15 +96,7 @@ I am now building something incredibly exciting in the AI safety &amp; security 
 
 ## <i class="fa fa-chevron-right"></i> Publications
 
-<!-- I usually publish at machine learning conferences, -->
-<!-- including , and ICML (5 papers). -->
-<!-- <a href="https://scholar.google.com/citations?user=njZL5CQAAAAJ">Google Scholar</a> -->
-<!-- reports 1k+ citations and an h-index of 6. -->
-<!-- The selected publications I am a primary author on are <span style='background-color: #ffffd0'>highlighted.</span> -->
-
-<!-- [<a href="https://scholar.google.com/citations?user=njZL5CQAAAAJ">Google Scholar</a>: 1k+ citations and an h-index of 6] <br> -->
-[<a href="https://scholar.google.com/citations?user=njZL5CQAAAAJ">Google Scholar</a>: 1k+ citations] <br>
-Selected publications I am a primary author on are <span style='background-color: #ffffd0'>highlighted.</span>
+[<a href="https://scholar.google.com/citations?user=njZL5CQAAAAJ">Google Scholar</a>: 1k+ citations]
 
 <h2>2026</h2>
 <table class="table table-hover">
@@ -129,7 +121,7 @@ Contact forces pose a major challenge for gradient-based optimization of robot d
 </tr>
 
 
-<tr id="tr-paulus2026advgame" style="background-color: #ffffd0">
+<tr id="tr-paulus2026advgame" >
 <td align='right' style='padding-left:0;padding-right:0;'>
 2.
 </td>
@@ -149,7 +141,7 @@ Ensuring the safety of language models (LMs) while maintaining their usefulness 
 </tr>
 
 
-<tr id="tr-paulus2026softjaxsofttorch" style="background-color: #ffffd0">
+<tr id="tr-paulus2026softjaxsofttorch" >
 <td align='right' style='padding-left:0;padding-right:0;'>
 3.
 </td>
@@ -172,7 +164,7 @@ Automatic differentiation (AD) frameworks such as JAX and PyTorch have enabled g
 <h2>2025</h2>
 <table class="table table-hover">
 
-<tr id="tr-paulus2025advprompter" style="background-color: #ffffd0">
+<tr id="tr-paulus2025advprompter" >
 <td align='right' style='padding-left:0;padding-right:0;'>
 4.
 </td>
@@ -264,7 +256,7 @@ Bridging logical and algorithmic reasoning with modern machine learning techniqu
 <h2>2020</h2>
 <table class="table table-hover">
 
-<tr id="tr-vlastelica2020differentiation" style="background-color: #ffffd0">
+<tr id="tr-vlastelica2020differentiation" >
 <td align='right' style='padding-left:0;padding-right:0;'>
 8.
 </td>
@@ -432,11 +424,11 @@ Building on recent progress at the intersection of combinatorial optimization an
 </table>
 
 
-## <i class="fa fa-chevron-right"></i> Invited Talks
-<!-- Slides for my major presentations are available
-[here](https://bamos.github.io/presentations/)
-under a CC-BY license. -->
+## <i class="fa fa-chevron-right"></i> Professional Activities
+<table class="table table-hover">
+</table>
 
+### Invited Talks
 <table class="table table-hover">
 <tr>
   <td align='right' style='padding-right:0;padding-left:0;'>1.</td>
@@ -456,11 +448,6 @@ under a CC-BY license. -->
 </tr>
 </table>
 
-
-## <i class="fa fa-chevron-right"></i> Professional Activities
-<table class="table table-hover">
-</table>
-
 ### Reviewing
 <table class="table table-hover">
 <tr>
@@ -474,28 +461,5 @@ under a CC-BY license. -->
 </tr>
 <tr>
   <td style='padding-right:0;'>Neural Information Processing Systems (NeurIPS) DiffCoAlg Workshop: 2025</td>
-</tr>
-</table>
-
-
-## <i class="fa fa-chevron-right"></i> Skills
-<table class="table table-hover">
-<tr>
-  <td class='col-md-2'>Programming</td>
-  <td>
-C++, Java, Python
-  </td>
-</tr>
-<tr>
-  <td class='col-md-2'>Frameworks</td>
-  <td>
-JAX, NumPy, Pandas, PyTorch, SciPy, TensorFlow
-  </td>
-</tr>
-<tr>
-  <td class='col-md-2'>Toolbox</td>
-  <td>
-Linux, emacs, git, tmux, zsh, uv, vscode
-  </td>
 </tr>
 </table>

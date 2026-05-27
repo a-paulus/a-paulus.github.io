@@ -451,15 +451,27 @@ Building on recent progress at the intersection of combinatorial optimization an
 ### Reviewing
 <table class="table table-hover">
 <tr>
-  <td style='padding-right:0;'>International Conference on Learning Representations (ICLR): 2022, 2023, 2024, 2025</td>
+  <td style='padding-right:0;'>
+    <span class='cvdate'>2022, 2023, 2024, 2025, 2026</span>
+    International Conference on Learning Representations (ICLR)
+  </td>
 </tr>
 <tr>
-  <td style='padding-right:0;'>International Conference on Machine Learning (ICML): 2022, 2023, 2024, 2025</td>
+  <td style='padding-right:0;'>
+    <span class='cvdate'>2022, 2023, 2024, 2025</span>
+    International Conference on Machine Learning (ICML)
+  </td>
 </tr>
 <tr>
-  <td style='padding-right:0;'>Neural Information Processing Systems (NeurIPS): 2021, 2022, 2025</td>
+  <td style='padding-right:0;'>
+    <span class='cvdate'>2021, 2022, 2025</span>
+    Neural Information Processing Systems (NeurIPS)
+  </td>
 </tr>
 <tr>
-  <td style='padding-right:0;'>Neural Information Processing Systems (NeurIPS) DiffCoAlg Workshop: 2025</td>
+  <td style='padding-right:0;'>
+    <span class='cvdate'>2025</span>
+    Neural Information Processing Systems (NeurIPS) DiffCoAlg Workshop
+  </td>
 </tr>
 </table>
